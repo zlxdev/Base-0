@@ -1,0 +1,12 @@
+# Ignore binaries
+*.exe
+*.o
+*.out
+
+#Ignore trash folders
+bin/*
+
+#Ignore .vscode folder
+.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
