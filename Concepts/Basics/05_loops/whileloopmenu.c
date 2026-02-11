@@ -3,12 +3,13 @@
 int main(void) {
 
     char choice;
+    int tries = 0;
 
-    printf("Do you wanna leave?: ");
-    scanf(" %c", &choice);
+    do {
+        printf("Do you wanna exit?: ");
+        scanf(" %c", &choice);
 
-    while(choice != 'n' || choice != 'N') {
-        printf("Okay this is not ending.\n");
-    }
+    } while (tries <= 30);
+    
     return 0;
 }
