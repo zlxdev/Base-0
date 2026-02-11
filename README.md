@@ -7,9 +7,9 @@ My personal repository for mastering C programming, focusing on low-level concep
 
 ### 📂 Repository Structure
 * **Concepts/** - Deep dives into pointers, memory, and structs.
-* **Labs/** - Practical experiments and small tests.
-* **Projects/** - Larger applications (e.g., converters, games).
-* **University/** - Academic coursework and assignments.
+* **Labs/** - Practical experiments and small tests. [WIP, might not be visible in repository]
+* **Projects/** - Larger applications (e.g., converters, games). [WIP, might not be visible in repository]
+* **University/** - Academic coursework and assignments. [WIP, might not be visible in repository]
 
 ### 🛠️ Tech Stack
 * **Language:** C (C99/C11)
