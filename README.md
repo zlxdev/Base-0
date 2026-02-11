@@ -1,3 +1,7 @@
+![Language](https://img.shields.io/badge/language-C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Platform](https://img.shields.io/badge/platform-WSL%20%2F%20Linux-orange?style=for-the-badge&logo=linux&logoColor=white)
+![License](https://img.shields.io/github/license/zlxdev/The-Road-of-C?style=for-the-badge)
+
 # The Road of C 🚀
 
 Welcome to my personal archive for mastering the C programming language. This repository documents my journey from high-level understanding down to low-level memory management and hardware interaction.
@@ -34,11 +38,11 @@ make <DIRECTORY>/<SUB_DIRECTORY>/<FILENAME>.run
 ### 🎯 Goals
 * **Solidify knowledge of C fundamentals.**
 * **Understand manual memory management.**
-* **Help you guide to build a strong portfolio of low-level coding challenges.**
+* **Help guide you to build a strong portfolio of low-level coding challenges.**
 
 ---
 
-### 👥 Who is it intended to?
+### 👥 Who is this intended for??
 
 > Students who want to follow along with this repository, learn C from someone on the same path, or peers who are curious and want to master C before moving on to other languages.
 
@@ -47,4 +51,5 @@ make <DIRECTORY>/<SUB_DIRECTORY>/<FILENAME>.run
 > Unlike standard tutorials, this is a student-led journey. Since the code is hand-written with minimal AI assistance, I invite contributors to suggest better coding styles, optimizations, or fixes. This repository prioritizes engagement and mutual learning over passive following.
 
 ---
-*Maintained by Johnzel Marahay*
+
+*Created & Maintained by Johnzel Marahay*
