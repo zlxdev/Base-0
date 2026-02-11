@@ -6,22 +6,23 @@ int main(void) {
     float myFloat; // declaring them empty allows the developer to create an input for user to allocate value in variable
     double myDouble; // same goes to double
 
-    printf("Enter your float number: ");
+    printf("\nEnter your float-decimal number: ");
     scanf("%f", &myFloat); // '%f' is a format-specifier for float, basically telling your computer to assign decimals on this variable
 
     printf("Enter your double-precision number: ");
     scanf("%lf", &myDouble); // '%lf' is more commonly used in assigning variables in a double datatype
 
     // Now let's print both values: 
-    printf("Your Float value is (%.2f) and your Double value is (%.2lf)\n", myFloat, myDouble);
+    printf("\nYour Float value is (%.2f) and your Double value is (%.2lf)\n", myFloat, myDouble); // Also its better to practice formatting floats rather than displaying full values, that is unless you need it for precise accuracy of data.
+                                                                                                // So keep in mind to use '%.2f' to only display 2 decimal values after the value.
 
     // ==================================================
     // READ THE IMPORTANT SECTION TO UNDERSTAND THIS PART
     // ==================================================
 
     // Here we use '%zu' to declare the memory size of each datatypes alongside 'sizeof()' function
-    printf("The size of a float variable is: %zu bytes\n", sizeof(myFloat));
-    printf("The size of the double variable is: %zu bytes\n", sizeof(myDouble));
+    printf("\nThe size of your float variable (%.2f) is: %zu bytes\n", myFloat, sizeof(myFloat));
+    printf("The size of your double variable (%.2f) is: %zu bytes\n", myDouble, sizeof(myDouble));
 
     return 0;
 }

@@ -20,5 +20,5 @@ BIN = bin
 
 # Cleaning up
 clean:
-		rm -rf %(BIN)/*
+		rm -rf $(BIN)/*
 		@echo "Bin folder has been cleaned"
