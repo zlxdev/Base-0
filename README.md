@@ -33,8 +33,7 @@ Here is the sample of existing file structure:
 
 ### My Recommendation
 
-> Ignore other directories aside from Concepts/Basics, if you just started. That way, you can focus on learning the concepts rather than being all over the place at the same time.
-
+> Ignore other directories aside from ```Concepts/Basics``` and ```Labs/``` for testing, if you just started learning. That way, you can focus on learning the concepts rather than being all over the place at the same time.
 
 ## Tech Stack
 * **Language:** C (C99/C11)
