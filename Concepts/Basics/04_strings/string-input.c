@@ -28,8 +28,9 @@ int main(void) {
 
     // lets use fgets() to get the string
     fgets(fullname, sizeof(fullname), stdin); // standard fgets function and its paramets to get the string
-    // Since getting strings almost always includes a new line after you press enter
     
+    // Since getting strings almost always includes a new line after you press enter
+    // we can use something called a "strcspn" or String Complement Span
     // strcspn calculates the length of the text before the "\n". 
     // We use that length as an index to replace "\n" with the null terminator \0.
     // So we can avoid "weird-formatting"
