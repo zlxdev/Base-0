@@ -5,10 +5,10 @@
 
 Welcome to my personal archive for mastering the C programming language. This repository documents my journey from high-level understanding down to low-level memory management and hardware interaction.
 
-> **Current Status:** Focusing on "small bits" and foundational concepts.
+> **Current Status:** Basics Completed. Transitioning to Intermediate concepts.
 
 ---
-# About this repository: 
+# About this repository:
 
 ## Philosophy: "Learn First, AI Later"
 This repository is built with a specific mindset: **Hand-coded mastery.**
@@ -24,13 +24,22 @@ Here is the sample of existing file structure:
 ```text
 .
 ├── Concepts/          # Core programming fundamentals & C mechanics
-│   ├── Basics/        # Syntax, Loops, Functions
+│   ├── Basics/        # Syntax, Loops, Functions (Completed)
 │   └── Memory/        # Pointers, Structs, Stack vs Heap
 ├── Labs/              # Experimental code (Testing, Build, Debugging)
 ├── Practice/          # DIY Codes (Best for solidifying concepts)
 ├── Projects/          # [Hidden/Local]
 └── Library/           
 ```
+
+## How it's going so far
+
+| Phase | Topics | Status |
+| :--- | :--- | :--- |
+| **Basics** | Datatypes, Loops, Flow Control, Arrays, Strings, Functions |  **Completed** |
+| **Intermediate** | Scope, Lifetime, Pointers, Structs |  **Planned (Learning)** |
+| **Advanced** | Dynamic Memory, File I/O, Data Structures |  **Future** |
+
 
 ### My Recommendation
 
