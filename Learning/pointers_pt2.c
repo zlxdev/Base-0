@@ -9,15 +9,18 @@ void calculateAreaofcircle(double* r);
 // Initialize main program
 int main(void){
 
+    // define variable and the pointer
     double radius = 0;
     double* ptR = &radius;
 
+    // if validator to check whether the user enters a number or not
     printf("Enter your radius: ");
     if (scanf("%lf", &radius) != 1) {
         printf("Error: Please enter a valid number.\n");
         return 1;
     }
 
+    // checks if the value of the memory address the pointer is pointing to not zero
     if (*ptR <= 0) {
         printf("Error: Number should be greater than zero.\n");
         return 1;
