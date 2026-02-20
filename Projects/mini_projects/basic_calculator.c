@@ -121,3 +121,16 @@ void divideNum(double num1, double num2) {
     double result = num1 / num2;
     printf("The result is: %.2lf\n", result);
 }
+
+
+
+/* =================================================
+*                     MUST READ!!!
+*  =================================================
+*  This is the most basic calculator that puts
+*  together what the topics in the concepts/basics
+*  are, while also introducing some intermediate
+*  concepts like pointers (double *n1) as well as
+*  some unique libraries like stdlib and unistd for
+*  QoL stuff.
+   =================================================*/
