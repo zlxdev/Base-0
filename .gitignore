@@ -11,6 +11,9 @@ bin/*
 !.vscode/tasks.json
 !.vscode/launch.json
 
+#Ignore Files
+Learning/pointer_functions.c
+
 #Ignore directories
 University/
 Library/
