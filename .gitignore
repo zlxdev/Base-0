@@ -14,11 +14,3 @@ bin/*
 #Ignore Files
 
 #Ignore directories
-University/
-Library/
-Practice/
-Labs/
-problem/
-Concepts/*
-Projects/
-Github/
