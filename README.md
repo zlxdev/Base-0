@@ -1,76 +1,85 @@
-# The Road of C
+# Base-0
 ![Language](https://img.shields.io/badge/language-C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Platform](https://img.shields.io/badge/platform-WSL%20%2F%20Linux-orange?style=for-the-badge&logo=linux&logoColor=white)
 ![License](https://img.shields.io/github/license/zlxdev/The-Road-of-C?style=for-the-badge)
 
-Welcome to my personal archive for mastering the C programming language. This repository documents my journey from high-level understanding down to low-level memory management and hardware interaction.
+Welcome to a personal archive for mastering the C programming language. This repository documents my journey from high-level understanding down to systems engineering and hardware interaction.
 
-> **Current Status:** Basics Completed. Transitioning to Intermediate concepts.
+> **Current Status:** Intermediate topics such as memory is in the works.
 
----
 # About this repository:
 
 ## Philosophy: "Learn First, AI Later"
 This repository is built with a specific mindset: **Hand-coded mastery.**
 * **The Code:** Written primarily by hand to ensure deep understanding of syntax and logic.
-* **AI Usage:** AI is treated as a *last resort*. It is used only when you are completely stuck on a concept, acting as a tutor rather than a writer. The goal is to struggle with the problem first, as that is where the learning happens.
-* **WSL:** Wsl is highly recommended, since this code heavily uses WSL terminal for compiling, testing, debugging, and running codes or even using git. I would say it's a must if you wanna avoid trouble merging with the files.
+* **AI Usage:** AI is treated as a *Tutor*. Used only when you are completely stuck on a concept, acting as a teacher rather than a the coder itself. The principle is to learn how the concept is done by typing it by hand and struggling on the problem,as that is where the learning happens.
+* **WSL:** Wsl is highly recommended, since this code heavily uses WSL terminal for compiling, testing, debugging, and running codes or even using git. I would say it's a must if you wanna avoid installing alot of stuff in VSCode Windows.
 
 ## Repository Structure
-Currently, some directories (like *Library* and *Projects*) are maintained locally or are Work-In-Progress (WIP) and may not be fully visible here yet.
 
 Here is the sample of existing file structure:
 
 ```text
 .
-├── Concepts/          # Core programming fundamentals & C mechanics
-│   ├── Basics/        # Syntax, Loops, Functions (Completed)
-│   └── Memory/        # Pointers, Structs, Stack vs Heap
-├── Labs/              # [Hidden/Local]
-├── Practice/          
-├── Projects/          
-└── Library/           
+├── bin/          # Compiled executable outputs and temporary object files.
+├── docs/         # Manuals, lab notes, diagrams and other documentations.    
+├── include/      # Headers files ('.h') establishing public interfaces and contracts  
+├── src/          # Main source code
+    ├── core/     # Fundamental C syntax, data-types, and control flow logic.
+    ├── labs/     # Experimental drills and isolated logic tests
+    ├── memory/   # Advanced memory management, pointer arithmetic, and segmentation.
+    ├── projects/ # Integrated, multi-file system builds.
+    └── utils/    # Reusable utility logic and library tools.    
+└── tests/        # Logic assignments and logic challenges.  
 ```
-
-## How it's going so far
-
-| Phase | Topics | Status |
-| :--- | :--- | :--- |
-| **Basics** | Datatypes, Loops, Flow Control, Arrays, Strings, Functions |  **Completed** |
-| **Intermediate** | Scope, Lifetime, Pointers, Structs |  **Planned (Learning)** |
-| **Advanced** | Dynamic Memory, File I/O, Data Structures |  **Future** |
 
 
 ### My Recommendation
 
-> Ignore other directories aside from ```Concepts/Basics``` and ```Labs/``` for testing, if you just started learning. That way, you can focus on learning the concepts rather than being all over the place at the same time.
+> Read the concepts first in `src/core/`, and try practicing it in the `test/` section in order to solidify understanding. You can also build mini-projects in section 
+
+
+## Build System Inegration
+<details>
+<summary><b>Click here for a step-by-step guide on how to run using Makefile</b></summary>
+
+This repository utilizes a dynamic **Makefile** for targeted compilation of isolated `.c` files. The compiler output is automatically routed to the `bin/` directory: 
+
+### Compilation and Execution
+
+To compile and immediately execute a specific source file, pass the file path to the `FILE` variable:
+
+```bash
+make run FILE=<directory>/<subdirectory>/<filename>.c
+```
+Example: 
+```bash
+make run FILE=src/labs/leb_mem_addresses.c
+```
+This approach explicitly defines the variable structure while providing a frictionless test command.
+
+### Compilation Only
+
+To compile a source without executing the result of binary, well use `build` rather than `run`:
+
+```bash
+make build FILE=src/core/02_loops/core_loop_for.c
+```
+
+### System Maintenance
+
+To remove clutter we can execute these following cmds to clear all compiled binary in `bin/` directory:
+
+```bash
+make clean
+```
+</details>
 
 ## Tech Stack
 * **Language:** C (C99/C11)
 * **Build System:** Make
 * **Environment:** WSL / Linux
 * **IDE:** VSCode
-
-## How to Run? (Click to Expand)
-<details>
-<summary><b>Click here for a step-by-step guide on how to run using Makefile</b></summary>
-
-This project uses a custom `Makefile` system. To compile and run a specific file, use the following pattern in your terminal:
-
-```bash
-make <DIRECTORY>/<SUB_DIRECTORY>/<FILENAME>.run
-```
-
-These are to be followed if you have forked the whole repository, if you didn't include/recieved or have an issue with make you can proceed with the normal compiling command:
-
-```bash
-gcc <ROOT_DIR>/<SUB_ROOT>/<file.c> -o bin/<file>
-./bin/<file>
-```
-
-As much as possible, proceed to post an issue regarding the error of files from forking, merging, or local errors. As it is my duty to help you fix these errors, if one does occur.
-</details>
-
 
 ## Goals
 * **Solidify knowledge of C fundamentals.**
