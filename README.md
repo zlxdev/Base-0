@@ -9,11 +9,11 @@ Welcome to a personal archive for mastering the C programming language. This rep
 
 # About this repository:
 
- This repository was primarily made to keep track of what i do via version history and remote storage. In that way, i can look at my progress throughout my journey as well as pull this repository if i ever do a fresh install of my OS. So just think of this as a dump repository that will be back-up in a base-use-case scenario.
+ This repository was primarily made to keep track of what i've done via version history and remote storage. In that way, I can look at my progress throughout my journey as well as pull this repository if I ever do a fresh install of my OS. So just think of this as a dump repository that will be back-up in a base-use-case scenario.
 
- However, i didn't make it solely for my convience, i also made this to ***share my knowledge towards people who are reading this repository as of this moment***. As well as to let peope be engaged with one another as a team via this repository by forking and branching. This way, people can have a better interaction and practice as a team, if they ever plan on being one.
+ However, I didn't make it solely for my convience, I also made this to ***share my knowledge towards people who are reading this repository as of this moment***. As well as to let peope be engaged with one another as a team via this repository by forking and branching. This way, people can have a better interaction and practice as a team, if they ever plan on being one.
 
- I hope this repository would be in help of any-way, as i will update this repository even if i switch languages to something like `C++`, `Java`, `Python`, and etc. This repository should mark as my first journey to being an engineer, starting from middle-end of low level languages to high languages like `Python` or `C++` for machine learning and infrastructure intelligence.
+ I hope this repository would be in help of any-way, as I will update this repository even if I switch languages to something like `C++`, `Java`, `Python`, and etc. This repository should mark as my first journey to being an engineer, starting from middle-end of low level languages to high languages like `Python` or `C++` for machine learning and infrastructure intelligence.
 
 ## Core Principle: "Learn First, AI Later"
 This repository is built with a specific mindset: **Hand-coded mastery.**
@@ -23,14 +23,14 @@ This repository is built with a specific mindset: **Hand-coded mastery.**
 
 ## Repository Structure
 
-Here is the sample of existing file structure:
+Here is the architectural structure of the repository:
 
 ```text
 .
 ├── bin/          # Compiled executable outputs and temporary object files.
 ├── docs/         # Manuals, lab notes, diagrams and other documentations.    
 ├── include/      # Headers files ('.h') establishing public interfaces and contracts  
-├── src/          # Main source code
+├── src/          # Main source code.
     ├── core/     # Fundamental C syntax, data-types, and control flow logic.
     ├── labs/     # Experimental drills and isolated logic tests
     ├── memory/   # Advanced memory management, pointer arithmetic, and segmentation.
@@ -41,18 +41,18 @@ Here is the sample of existing file structure:
 ```
 
 
-### My Recommendation
+### Recommended Workflow
 
-> Read the concepts first in `src/core/`, and try practicing it in the `test/` section in order to solidify understanding. You can also build mini-projects in section
+> Read the concepts first in `src/core/`, and try practicing it in the `test/` section in order to solidify understanding. You can also build mini-projects in section.
 
 ## Tech Stack
-* **Language:** C (C99/C11)
-* **Build System:** Makefile
-* **Environment:** WSL / Linux
-* **IDE:** VSCode
+* **Language:** C (C99/C11).
+* **Build System:** Makefile.
+* **Environment:** WSL / Linux.
+* **IDE:** VSCode.
 
 
-## Build System Inegration
+## Build System Integration
 <details>
 <summary><b>Click here for a step-by-step guide on how to run using Makefile</b></summary>
 
@@ -67,7 +67,7 @@ make run FILE=<directory>/<subdirectory>/<filename>.c
 ```
 Example: 
 ```bash
-make run FILE=src/labs/leb_mem_addresses.c
+make run FILE=src/labs/lab_mem_addresses.c
 ```
 This approach explicitly defines the variable structure while providing a frictionless test command.
 
@@ -95,12 +95,12 @@ make clean
 
 ### Who is this intended for??
 
-> Students who are interested in learning C and stumbled across this repository. Or someone who are interested to view this repository to learn the history of how, I, Cassian's learning progress is.
+> Students interested in learning C who have stumbled across this repository, or anyone interested in viewing the historical learning progress and evolution of Cassian as a developer.
 
 ### How is it different from other tutorials of C?
 
-> Unlike standard tutorials, this is a interactive journey. Since this repository does exists, it means it has version control. So, I invite contributors to suggest better coding styles, optimizations, or fixes. This repository prioritizes collaborative work and engagement among teams.
+> Unlike static tutorials, this is an interactive journey secured by version control. I invite contributors to suggest better coding styles, optimizations, or architectural fixes. This repository prioritizes collaborative work and team engagement.
 
 ---
 
-*Created & Maintained by Cassian*
+*Created & Maintained by Cassian.*
