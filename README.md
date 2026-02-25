@@ -95,12 +95,12 @@ make clean
 
 ### Who is this intended for??
 
-> Students who want to follow along with this repository, learn C from someone on the same path, or peers who are curious and want to master C before moving on to other languages.
+> Students who are interested in learning C and stumbled across this repository. Or someone who are interested to view this repository to learn the history of how, I, Cassian's learning progress is.
 
 ### How is it different from other tutorials of C?
 
-> Unlike standard tutorials, this is a student-led journey. Since the code is hand-written with minimal AI assistance, I invite contributors to suggest better coding styles, optimizations, or fixes. This repository prioritizes engagement and mutual learning over passive following.
+> Unlike standard tutorials, this is a interactive journey. Since this repository does exists, it means it has version control. So, I invite contributors to suggest better coding styles, optimizations, or fixes. This repository prioritizes collaborative work and engagement among teams
 
 ---
 
-*Created & Maintained by Johnzel Marahay*
+*Created & Maintained by Cassian*
