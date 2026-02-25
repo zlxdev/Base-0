@@ -3,13 +3,19 @@
 ![Platform](https://img.shields.io/badge/platform-WSL%20%2F%20Linux-orange?style=for-the-badge&logo=linux&logoColor=white)
 ![License](https://img.shields.io/github/license/zlxdev/The-Road-of-C?style=for-the-badge)
 
-Welcome to a personal archive for mastering the C programming language. This repository documents my journey from high-level understanding down to systems engineering and hardware interaction.
+Welcome to a personal archive for mastering the C programming language. This repository documents one's journey from syntax understanding of logic, down to systems engineering and hardware interaction.
 
 > **Current Status:** Intermediate topics such as memory is in the works.
 
 # About this repository:
 
-## Philosophy: "Learn First, AI Later"
+ This repository was primarily made to keep track of what i do via version history and remote storage. In that way, i can look at my progress throughout my journey as well as pull this repository if i ever do a fresh install of my OS. So just think of this as a dump repository that will be back-up in a base-use-case scenario.
+
+ However, i didn't make it solely for my convience, i also made this to ***share my knowledge towards people who are reading this repository as of this moment***. As well as to let peope be engaged with one another as a team via this repository by forking and branching. This way, people can have a better interaction and practice as a team, if they ever plan on being one.
+
+ I hope this repository would be in help of any-way, as i will update this repository even if i switch languages to something like `C++`, `Java`, `Python`, and etc. This repository should mark as my first journey to being an engineer, starting from middle-end of low level languages to high languages like `Python` or `C++` for machine learning and infrastructure intelligence.
+
+## Core Maxims: "Learn First, AI Later"
 This repository is built with a specific mindset: **Hand-coded mastery.**
 * **The Code:** Written primarily by hand to ensure deep understanding of syntax and logic.
 * **AI Usage:** AI is treated as a *Tutor*. Used only when you are completely stuck on a concept, acting as a teacher rather than a the coder itself. The principle is to learn how the concept is done by typing it by hand and struggling on the problem,as that is where the learning happens.
@@ -28,7 +34,8 @@ Here is the sample of existing file structure:
     ├── core/     # Fundamental C syntax, data-types, and control flow logic.
     ├── labs/     # Experimental drills and isolated logic tests
     ├── memory/   # Advanced memory management, pointer arithmetic, and segmentation.
-    ├── projects/ # Integrated, multi-file system builds.
+    ├── projects/ # Mini-projects for user and owner builds.
+    ├── system/   # Integrated, multi-file system builds.
     └── utils/    # Reusable utility logic and library tools.    
 └── tests/        # Logic assignments and logic challenges.  
 ```
