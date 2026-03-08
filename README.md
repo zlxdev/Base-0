@@ -27,32 +27,86 @@ Here is the architectural structure of the repository:
 
 ```text
 .
-├── bin/          # Compiled executable outputs and temporary object files.
-├── docs/         # Manuals, lab notes, diagrams and other documentations.    
-├── include/      # Headers files ('.h') establishing public interfaces and contracts  
-├── src/          # Main source code.
-    ├── core/     # Fundamental C syntax, data-types, and control flow logic.
-    ├── labs/     # Experimental drills and isolated logic tests
-    ├── memory/   # Advanced memory management, pointer arithmetic, and segmentation.
-    ├── projects/ # Mini-projects for user and owner builds.
-    ├── system/   # Integrated, multi-file system builds.
-    └── utils/    # Reusable utility logic and library tools.    
-└── tests/        # Logic assignments and logic challenges.  
+├── bin/            # Compiled executable outputs and temporary object files.
+├── docs/           # Manuals, lab notes, diagrams and other documentations.    
+├── include/        # Headers files ('.h') establishing public interfaces and contracts  
+├── src/            # Main source code.
+    ├── core/       # Fundamental C syntax, data-types, and control flow logic.
+    ├── exercises/  # Practice, Quizzes, and Drills to solidify your understanding
+    ├── labs/       # Experimental drills and isolated logic tests
+    └── memory/     # Advanced memory management, pointer arithmetic, and segmentation..    
+└── tests/          # Logic assignments and logic challenges.  
 ```
 
 
 ### Recommended Workflow
 
-> Read the concepts first in `src/core/`, and try practicing it in the `test/` section in order to solidify understanding. You can also build mini-projects in section.
+> Read the concepts first in `src/core/`, and try practicing it by answering the questions in `exercises/` section in order to solidify understanding.
 
-## Tech Stack
+## Required Tech Stack
 * **Language:** C (C99/C11).
 * **Build System:** Makefile.
 * **Environment:** WSL / Linux.
 * **IDE:** VSCode.
 
+## Step-by-step on installing the coding environment
+<details>
+<summary><b>How to install WSL, VSCode, and essentials.</b></summary>
 
-## Build System Integration
+Since you are curious and wanted to know how to install these environments, we should first start with `WSL -> VSCode -> Essentials`.
+
+### Step 1: Install WSL (Windows Subsystem for Linux)
+To install WSL properly, you are required to have atleast a version 2004 of Windows or higher, or Windows 11.
+
+- First step, **Open PowerShell or Windows Command Prompt as an administrator**. You can either do this by searching the terminal or cmd prompt and finding the *"Run as Administrator* button in Windows 11. Otherwise it's Powershell (Admin) or CMD/Command Prompt (Admin).
+
+- **Run the install command** and restart your computer when prompted.
+``` bash
+wsl --install
+```
+
+- **Set up your Linux username and password** after restarting windows and opening the ubuntu terminal. You can open the Ubuntu terminal by going to opening the **Terminal** CLI in Windows 11 and finding the dropdown ( V ) button.
+Keep in mind that this account is independent to your microsoft/windows account, if you have one.
+
+
+### Step 2: Installing VSCode.
+To use VSCode with WSL, you will have to install the windows version of VSCode not the WSL one.
+
+- So as usual, you just have to go on the [official Visual Studio Code website](https://code.visualstudio.com/) and head directly to the [VSCode Downloads](https://code.visualstudio.com/Download) button and click Windows or [click here](https://code.visualstudio.com/thank-you?dv=win64user).
+- **Run the installer** after it has been finished downloading and follow the prompts. Make sure to also check the ***ADD to PATH*** option during your installation as this is crucial to ensure you can use vscode in wsl by typing `code` in the WSL Terminal.
+
+
+### Step 3: Install the WSL Extension in VS Code
+
+Once you are done installing, imediately open VSCode to install the necessary extensions speficially the most important one called: **"Remote Development extension pack or Remote - WSL extension"**. This ensure you can run in a "client-server", with the UI on Windows and most of the development in happen remotely inside WSL.
+
+1. Open **VS Code** in Windows.
+2. **Go to the Extensions view** by clicking the extensions icon on the left sidebar or pressing `Ctrl`+`Shift`+`X`.
+2. **Search for "WSL"** and install the **Remote - WSL** extension provided by Microsoft. (Alternatively, you can install the full [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) which includes the WSL extension and some pretty neat features too.)
+
+### Step 4: Open a WSL Project in VS Code.
+
+Now that you are done with the earlier procedures, you can now proceed to code in **VSCode with a WSL Terminal**. And now, you can also run or open your Linux file system directly in WSL terminal or from within VS Code.
+
+* From the WSL terminal (recommended for best performances):
+    * Open your Linux distribution (in most cases and in your case, this is Ubuntu.) from the Windows Start menu.
+    * Navigate to your desired projet folder (e.g., `cd projects/myproject`).
+    * Type the following command to open the current directory in VS Code:
+    ```bash
+    code .
+    ```
+    * The first time you run this, VS Code will install its server components in the Linux environment. A notification in the bottom-left corner of VS Code will indicate that you are connected to WSL (e.g., WSL: Ubuntu).
+* or From **VS Code's command palette:
+    * Open VS Code.
+    * Press `F1` (or `Ctrl`+`Shift`+`P`) to open the command palette.
+    * Type `WSL: Connect to WSL` and select it from the dropdown list.
+
+And you are basically done. You can now code/develop/create your projects using Linux tools and the Linux file system (recommended) within the familiar VS Code inteface running on Windows.
+
+
+</details>
+
+## Step-By-Step Instrution for Makefile Integeration
 <details>
 <summary><b>Click here for a step-by-step guide on how to run using Makefile</b></summary>
 
