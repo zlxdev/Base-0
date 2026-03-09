@@ -1,8 +1,8 @@
-# Contributing to The Road of C
+# Base-0's Guide on Contribution
 
-First off, thank you for considering contributing to this learning journey!
+First off, thank you for expressing interest in contributing to Base-0! Before we start going about this guide, be sure you've read [the general contributing guide](), since this contains information which explains the instructions thoroughly on how to contribute.
 
-Since this repository is a personal study archive, my goal is **understanding**, not just "working code."
+If you have read this section, then we assume that you have folowed the instructions in our general contributing guide on how to fork and clone this repo.
 
 ##  How Can You Help?
 I am looking for contributions that:
@@ -39,8 +39,13 @@ Click the **Fork** button at the top-right of this page. This creates a copy of 
 ### 2. Clone to your Machine
 Open your terminal/WSL and run:
 ```bash
-git clone [https://github.com/YOUR_USERNAME/The-Road-of-C.git](https://github.com/YOUR_USERNAME/The-Road-of-C.git)
-cd The-Road-of-C
+# For SSH encrypted
+git clone git@github.com:[YOURUSERNAME]/Base-0.git/
+# For contributers who don't use SSH
+git clone https://github.com/[YOURUSERNAME]/Base-0.git
+
+# then go to the diretory by typing this cmd
+cd Base-0
 ```
 
 ### 3. Create a Branch (Important!)
