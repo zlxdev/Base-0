@@ -1,41 +1,16 @@
 # Contributing to Base-0
 
-Again, thank you for considering to contribute voluntarily towards this repository. We hope that what this repository would be of someones help in the near future, even if it's not now.
+Again, thank you for considering to contribute voluntarily towards this repository. We hope that this learning guide of a repository be of help amongst learners and fellow developers. Now please be sure to read this guide thoroughly before contributing as it will lessen the chances of any issues arising during the process.
 
-So let's proceed to the step-by-step instruction on how to fork, clone your repository, as well as branching, commiting, to prs and pushing.
+*Keep in mind:* any PRs created for an issue that is already assigned to someone **will be discarded without review.**
 
-## 1. Fork the Project
-Click the **Fork** button at the top-right of this page. This creates a copy of my code in *your* GitHub account.
+## Table of Contents
 
-## 2. Clone to your Machine
-Open your terminal/WSL and run:
-```bash
-# For SSH encrypted
-git clone git@github.com:[YOURUSERNAME]/Base-0.git/
-# For contributers who don't use SSH
-git clone https://github.com/[YOURUSERNAME]/Base-0.git
 
-# then go to the diretory by typing this cmd
-cd Base-0
-```
+## Curriculm Structure
 
-## 3. Create a Branch (Important!)
-Never work directly on `main`. Create a "branch" for your specific change:
-```bash
-# Example: If you are fixing a typo in pointers
-git checkout -b fix/pointer-typo
-```
+Following along with the project topics and concepts, you're eventually bound to see certain referrence and terms being used in regard to the lessons structure. It is important to keep thse terms in mind when referring or contributing to certain parts of our curriculm, both for consistency and to make sure everyone understands what you mean.
 
-## 4. Make your Changes
-Edit the files in VS Code. When you are done:
-```bash
-git add .
-git commit -m "Fix typo in pointer explanation"
-```
+* **Level:** This is the most simplest form of the curriculm's structure. Starting from Beginner to Advance concepts. When you first start learning along with this repository, you will be mostly in Beginners section, which then you'll move on to other sections such as intermediate and to advance level.
 
-## 5. Push and PR
-Upload your branch to your fork:
-```bash
-git push origin fix/pointer-typo
-```
-Go back to GitHub, and you will see a green button says **"Compare & pull request"**. Click it!
+* **Concepts:** Each level is made up of different courses based on its complexity and difficulty.
