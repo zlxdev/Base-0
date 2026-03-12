@@ -58,3 +58,14 @@ A proper issue naming and PR labeling is a must, so we created few meanings to u
 * **Priority:** This issue/PR should be resolved urgently and quickly.
 
 Kudos to [The Odin Project](https://github.com/TheOdinProject) for giving ideas on how to label each meanings separately, this will be of help not only for the contributors, but also to everyone.
+
+## How to Contribute
+
+### Different types of changes
+
+**Simple Issues and Changes:** These don't have a major impact in our repos.
+
+* Typo or grammar fixes - "I noticed a few typos in lesson a and lesson b is using incorrect grammar."
+* Simple syntax errors - "This line of code seems to be missing a semicolon(;) or this line of code seems to be missing an ampersand(&)."
+* Clarifying questions - "This lesson says that this is a good practice of syntax usage, but the previous lesson says that some of tehse are bad practice. Which is correct?"
+* Other small-scale changes - "I think including a documentation for X Lesson to explain the topic more thoroughly should be done and avoid confusion for other learners."
