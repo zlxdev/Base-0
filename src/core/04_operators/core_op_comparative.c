@@ -44,20 +44,20 @@ int main(void) {
 
     // If there is no errors, then we proceed to
     // the actual program:
-    if (grade == 75) {
-        printf("You barely passed.\n");
-    } else if (grade >= 76) {
-        printf("You have passed with okay remarks.\n");
-    } else if (grade >= 81) {
-        printf("You passed with great remarks!\n");
-    } else if (grade >= 86) {
-        printf("You passed with good remarks!\n");
+    if (grade == 100) {
+        printf("Congratulations! You passed with complete remarks!\n");
+    } else if (grade >= 96) {
+        printf("You have passed with Excellent remarks.\n");
     } else if (grade >= 91) {
         printf("You passed with Very Good remarks!\n");
-    } else if (grade >= 96) {
-        printf("You passed with Excellent remarks! Congratulations!\n");
-    } else if (grade == 100) {
-        printf("Congrats on passing with complete remarks!\n");
+    } else if (grade >= 86) {
+        printf("You passed with Good remarks!\n");
+    } else if (grade >= 81) {
+        printf("You passed with Great remarks.\n");
+    } else if (grade >= 74) {
+        printf("You passed with Okay remarks.\n");
+    } else if (grade == 75) {
+        printf("You barely passed.\n");
     } else {
         printf("You have failed.\n");
     }
