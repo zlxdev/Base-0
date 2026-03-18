@@ -10,12 +10,14 @@ Again, thank you for considering to contribute voluntarily towards this reposito
 * [Proper Labeling](#proper-labeling)
 * [How to Contribute](#how-to-contribute)
     * [Different types of changes](#different-types-of-changes)
-    * [Verify Before Creating Another]()
+    * [Verify Before Creating Another](#verify-before-creating-another)
     * [Being Assigned an Issue](#being-assigned-an-issue)
     * [Creating an Issue](#creating-an-issue)
     * [Setting Up Your Local Clone](#setting-up-your-local-clone)
     * [Working on an issue](#working-on-an-issue)
     * [Opening a Pull Request](#opening-a-pull-request)
+* [Credentials](#credentials)
+* [Further Help](#further-help)
 
 ## Repository Structure
 
@@ -186,3 +188,21 @@ Once you have the repo forked and cloned, and the upstream remote has been set, 
          ![Github branch dropdown menu picture](https://user-images.githubusercontent.com/70952936/150646139-bc080c64-db57-4776-8db1-6525b7b47be2.jpg)
     
     * Once you have switched to the correct branch on GitHub, click the "Contribute" dropdown and then click the "Open pull request" button.
+
+2. **Read all of the PR template before filling it out and submitting a PR.** Not correctly filling out a template will result in a delay of PR in merging.
+    * If a checkbox is not required and is not applicable to your PR, do not complete it. 
+    * The title of the PR must follow the format described in the PR template.
+    * If the PR is meant to close an open issue, you must link that issue in Step 1 of the PR template. This can be done either by replacing the `XXXXX` with the issue number, e.g. `Closes #6066`. This streamlines the issue closing process, as an issue that is linked to a PR will be clsoed when that PR gets merged.
+    * If the PR is not part of an open issue, be sure to describe the reason(s) for the change(s) in more detail in Step 1 of the PR template, as well as outlining the changes made in the PR Step 2.
+
+3. At this part, a maintainer will either leave general comments, request changes, or approve and merge your PR.
+    * It is important to respond to any comment or requested changes in a timely manner, otherwise your PR might result on close without being merged due to inactivity of the contributor.
+    * After pushing any requested changes to the branch you opened the PR with, be sure to re-request a review from the maintainer that requested those changes at the top right of the sidebar (this will only appear when a maintainer is assigned as a review or has requested changes):
+
+        ![GitHub reviewer's section sidebar](https://user-images.githubusercontent.com/70952936/150647064-4fdd59d1-82a4-4f18-894d-0e43a5ee0ffb.jpg)
+
+## Credentials
+Many thanks to [The Odin Project's contributing guide](https://github.com/TheOdinProject/curriculum?tab=contributing-ov-file) on helping me creating a contributing guide by referrencing most of their work. Since this is a solo-dev repository made by potentially a beginner developer, i aspire to create something detailed as this. Hence, i wanna give my thanks to [The Odin Project](https://github.com/TheOdinProject).
+
+## Further Help
+If you have any more inquiries about the instructions of creating an issue in a relevant repository, please let us know. You can also seek help with creating an issue you can follow [Github's guide on how to create an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue).
