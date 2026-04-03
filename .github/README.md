@@ -1,57 +1,90 @@
-# Base-0
-![Language](https://img.shields.io/badge/language-C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Platform](https://img.shields.io/badge/platform-WSL%20%2F%20Linux-orange?style=for-the-badge&logo=linux&logoColor=white)
-![License](https://img.shields.io/github/license/zlxdev/The-Road-of-C?style=for-the-badge)
+# Base-0's Extensive README
 
-Welcome to a personal archive for mastering the C programming language. This repository documents one's journey from syntax understanding of logic, down to systems engineering and hardware interaction.
+## Table of Contents
+* [Getting Started](#getting-started)
+* [Core Principles](#core-principles-ai-augmented-learning)
+* [Repository Strucutre](#repository-structure)
+    * [Recommended Workflow](#recommended-workflow)
+* [Technical Requirements](#technical-requirements)
+* [Technical Instructions](#technical-instructions)
+    * [How to start developing](#how-to-start-developing)
+        * [Step 1: WSL](#step-1-install-wsl-windows-subsystem-for-linux)
+        * [Step 2: VSCode](#step-2-installing-vscode)
+        * [Step 3: VSCode Extensions](#step-3-install-the-wsl-extension-in-vs-code)
+        * [Step 4: Code with WSL](#step-4-open-a-wsl-project-in-vs-code)
+    * [Makefile Instructions](#makefile-instructions)
+        * [Running Code with Makefile](#running-code-with-makefile)
+        * [Compilation Only](#compilation-only)
+        * [System Maintenance](#system-maintenance)
+* [Repository's Purpose](#repositorys-purpose)
+    * [Other Inteded Purpose](#other-intended-purpose)
+    * [Other FAQs](#how-is-it-different-from-other-tutorials-of-c)
 
-> **Current Status:** Intermediate topics such as memory is in the works.
+## Getting Started
+I, thank you for being interested in this repository since you are reading this README extension. So, this readme will tell you more about our repository and its current progress.
 
-# About this repository:
+But before that we should probably start with the ethical standards of this repository, such as:
 
- This repository was primarily made to keep track of what i've done via version history and remote storage. In that way, I can look at my progress throughout my journey as well as pull this repository if I ever do a fresh install of my OS. So just think of this as a dump repository that will be back-up in a base-use-case scenario.
+## Core Principles: "AI Augmented Learning"
+This repository was made by hand and with a little bit use of AI, at the time you are reading this. So I highly suggest using AI, but only if you met any of these criterias:
 
- However, I didn't make it solely for my convience, I also made this to ***share my knowledge towards people who are reading this repository as of this moment***. As well as to let peope be engaged with one another as a team via this repository by forking and branching. This way, people can have a better interaction and practice as a team, if they ever plan on being one.
+* Need more thorough explanation of some concepts.
+* Struggling with the concepts after experimenting.
+* More clarifications about some codes.
 
- I hope this repository would be in help of any-way, as I will update this repository even if I switch languages to something like `C++`, `Java`, `Python`, and etc. This repository should mark as my first journey to being an engineer, starting from middle-end of low level languages to high languages like `Python` or `C++` for machine learning and infrastructure intelligence.
+I can relate with most people that we do struggle understanding some concepts or complex method sometimes. That's why there are forums and a search engine to help you learn it further as well as the rise of AI being a more well-rounded and personalized bot for alot of uses.
 
-## Core Principle: "Learn First, AI Later"
-This repository is built with a specific mindset: **Hand-coded mastery.**
-* **The Code:** Written primarily by hand to ensure deep understanding of syntax and logic.
-* **AI Usage:** AI is treated as a *Tutor*. Used only when you are completely stuck on a concept, acting as a teacher rather than a the coder itself. The principle is to learn how the concept is done by typing it manually and deliberately struggling on the problem, as that is where the learning happens.
-* **WSL:** Wsl is highly recommended, since this code heavily uses WSL terminal for compiling, testing, debugging, and running codes or even using git. I would say it's a must if you wanna avoid installing alot of stuff in VSCode Windows.
+However, since AI has made all of those information gathering more compact and personalized. There is also a risk of gaining a hollow knowledge, this means that you know what the thing is but you don't know *what it does* or *why it exists*. And this leaves alot of new developers to be more prone to error by alot.
+
+So what i want you to do, is to use AI as much as you want but only following certain criterias. This way, you will learn alot better if you struggle on the concepts itself. Although gaining knowledge beforehand will boosts your problem solving more. So you can do whatever you want BUT within the limitations.
 
 ## Repository Structure
+Most of you are probably curious at the time of reading this on what the file structure looks like (i don't know why you haven't looked on files itself). Hence, i will put the structure of repository here, but do remember that **this is only identical with the actual structure of files found in repository as well.**
 
-Here is the architectural structure of the repository:
+For people who are curious about the repository structure, here it is:
 
 ```text
-.
+./
 ├── bin/            # Compiled executable outputs and temporary object files.
 ├── docs/           # Manuals, lab notes, diagrams and other documentations.    
-├── include/        # Headers files ('.h') establishing public interfaces and contracts  
-├── src/            # Main source code.
+├── src/            # Main directory of the codes.
     ├── core/       # Fundamental C syntax, data-types, and control flow logic.
-    ├── exercises/  # Practice, Quizzes, and Drills to solidify your understanding
-    ├── labs/       # Experimental drills and isolated logic tests
-    └── memory/     # Advanced memory management, pointer arithmetic, and segmentation..    
-└── tests/          # Logic assignments and logic challenges.  
+    ├── exercises/  # Practice, Quizzes, and Drills to solidify your understanding of concepts.
+    └── memory/     # Advanced memory management, pointer arithmetic, and segmentation concepts.
 ```
 
+There are more stuff that will be implemented as soon as it's finished.
 
 ### Recommended Workflow
 
-> Read the concepts first in `src/core/`, and try practicing it by answering the questions in `exercises/` section in order to solidify understanding.
+> In each file of on each concepts, there is comment that explains a tiny-bit of information about the concepts and how it works. I highly suggest reading those, if you manage to ignore it somehow.
+>
+> As well as reading the documentations of each concepts in our `docs/` directory for more explanation on how things work on each concepts.
 
-## Required Tech Stack
+
+## Technical Requirements
+First off, if you wanna have a more smoother experience following this repository i highly suggest following the requirements below:
+
 * **Language:** C (C99/C11).
 * **Build System:** Makefile.
 * **Environment:** WSL / Linux.
 * **IDE:** VSCode.
 
-## Step-by-step on installing the coding environment
+Assuming you followed this correctly, you will greatly benefit using makefile as your coderunner than standard `gcc`, as this makes everything a bit more easier to run with a simple command.
+
+However, if you the makefile does not server a purpose in your workflow or you don't like it and want to change it. You can do so by following a [makefile guide](https://makefiletutorial.com/). From there, you can search around for instructions and what suits your needs. At the same time, you can also use AI for more personalized one and less hassle on coming up with a better automation workflow.
+
+
+## Technical Instructions
+
+If you proceeded to this section, you probably don't want any hassle of changing anything before you even write or understand the code. So here are some instructions on how to install everything with WSL (assuming you want to use WSL).
+
+### For starters, we can proceed first with installing your coding environment
+
 <details>
-<summary><b>How to install WSL, VSCode, and essentials.</b></summary>
+<summary><b>Instructions for installing coding environment (Click me).</b></summary>
+
+## How to start developing
 
 Since you are curious and wanted to know how to install these environments, we should first start with `WSL -> VSCode -> Essentials`.
 
@@ -106,15 +139,19 @@ And you are basically done. You can now code/develop/create your projects using 
 
 </details>
 
-## Step-By-Step Instrution for Makefile Integeration
+
+### Here is also the guide for the default built-in makefile for this repository
+
 <details>
-<summary><b>Click here for a step-by-step guide on how to run using Makefile</b></summary>
+<summary><b>Makefile instruction on how to run code (Click me).</b></summary>
+
+## Makefile Instructions
 
 This repository utilizes a dynamic **Makefile** for targeted compilation of isolated `.c` files. The compiler output is automatically routed to the `bin/` directory: 
 
-### Compilation and Execution
+### Running Code with Makefile
 
-To compile and immediately execute a specific source file, pass the file path to the `FILE` variable:
+To run your code using makefile, pass the file path to the `FILE` variable:
 
 ```bash
 make run FILE=<directory>/<subdirectory>/<filename>.c
@@ -127,7 +164,7 @@ This approach explicitly defines the variable structure while providing a fricti
 
 ### Compilation Only
 
-To compile a source without executing the result of binary, well use `build` rather than `run`:
+To compile your code without running with we can go with `make build`:
 
 ```bash
 make build FILE=src/core/02_loops/core_loop_for.c
@@ -135,25 +172,38 @@ make build FILE=src/core/02_loops/core_loop_for.c
 
 ### System Maintenance
 
-To remove clutter we can execute these following cmds to clear all compiled binary in `bin/` directory:
+If you want to clean your `bin/` directory, you can easily just execute `make clean` like the one below:
 
 ```bash
 make clean
 ```
 </details>
 
-## Goals
-* **Solidify understanding of C syntax.**
-* **Understanding how C interacts with memory.**
-* **Helps you understand how dangerous unoptimized codes are.**
+## Repository's Purpose
 
-### Who is this intended for??
+As the title suggests, this repository also serves a single purposes. It's a purpose that is more subjective and rather controversial (if i say so). So i suggest you read this part and decide whether or not this repository is for you as a Contributer/Member or a Learner.
 
-> Students interested in learning C who have stumbled across this repository, or anyone interested in viewing the historical learning progress and evolution of Cassian as a developer.
+Let's go straight to the point, this repository's purpose is to **serve and help learners across different roles.** Meaning that even if you are a contributor or a learner, you will learn alot better about the code, repository, maintaing or even the people that also handles this repository itself, if you are more active either by collaborating with others or suggesting issues. This might sound something out of a motivational speech or something more personal but as we said, the purpose is to encourage and foster team collab across beginners in `C Language`.
+
+* It's Core Lessons are:
+    * **Solidify understanding of C syntax.**
+    * **Understanding how C interacts with memory.**
+    * **Helps you understand how dangerous unoptimized codes are.**
+* It's Core Values are:
+    * **Providing team collaboration with other people with or without the same skill set.**
+    * **Fosters growth by learning along with each other.**
+
+Just think of this as an Cloud Classroom because Online would require a meeting on apps like **GoogleMeet** or **Zoom**. Rather than just a simulated classroom with a tools and environment of a startup company. Not that i would say that it is, but it's only an example.
+
+And that's about it, this repository is good for people who come across with this repository while thinking about learning C for a while, but wanted to have a "coop experience" per se. Kinda like souls multiplayer but with programming.
+
+### Other Intended Purpose
+
+> Students interested in learning C who have stumbled across this repository, or anyone interested in viewing the historical learning progress and evolution of n-mee as a developer.
 
 ### How is it different from other tutorials of C?
 
-> Unlike static tutorials, this is an interactive journey secured by version control. I invite contributors to suggest better coding styles, optimizations, or architectural fixes. This repository prioritizes collaborative work and team engagement.
+> Like i said, unlike static tutorials, this is an interactive journey secured by version control. I invite contributors to suggest better coding styles, optimizations, or architectural fixes. This repository prioritizes collaborative work and team engagement. As well as encouraging beginners to atleast try to contribute with this repository as part of your learning progress.
 
 ---
 
