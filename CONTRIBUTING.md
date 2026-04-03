@@ -1,16 +1,12 @@
 # Base-0's Guide on Contribution
 
-First off, thank you for expressing interest in contributing to Base-0! Before we start going about this guide, be sure you've read [the general contributing guide](.github/CONTRIBUTING.md), since this contains information which explains the instructions thoroughly on how to contribute.
+First off, thank you for expressing interest in contributing to Base-0! Before we start going about this guide, be sure you've read [the general contributing guide](.github/MORE_INFO_C.md), since this contains information which explains the instructions thoroughly on how to contribute.
 
 If you have read this section, then we assume that you have folowed the instructions in our general contributing guide on how to fork and clone this repo.
 
-## Table of Contents
-
-* [How to Contribute](#how-to-contribute)
-
 ## How to Contribute
 
-If you haven't already, please refer to our [general contributing guide](.github/CONTRIBUTING.md) for more details about how you should and could make changes to the repository.
+If you haven't already, please refer to our [general contributing guide](.github/MORE_INFO_C.md) for more details about how you should and could make changes to the repository.
 
 When it comes to opening a pull requests (PR) to this repository, you can do it by the following:
 

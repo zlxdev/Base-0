@@ -18,9 +18,9 @@ This project documents my technical progression towards learning low-level syste
 If you have more inquiries about the repository, don't hesitate to contact the owner via our socials. As well as putting an issue, if you found any problems/bugs within the repository.
 
 Or if you can want do read more about this repository:
-- You can also visit our [extensive version of readme](.github/MORE_INFO.md) to know more about the progress of this repository as well as some additional information.
+- You can also visit our [extensive version of readme](.github/MORE_INFO_R.md) to know more about the progress of this repository as well as some additional information.
 
-- You can also proceed to reading our [contributing guide](.github/CONTRIBUTING.md) if you are interested in helping or improving my works, as i highly appreciate collaborating.
+- You can also proceed to reading our [contributing guide](CONTRIBUTING.md) if you are interested in helping or improving my works, as i highly appreciate collaborating.
 
 ---
 *Owned by n-mee*
